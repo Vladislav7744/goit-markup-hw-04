@@ -235,8 +235,8 @@ body {
     url(../images/hero-img.jpg);
     background-color: var(--hero-footer-color);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+    /* background-position: top; */
+    /* background-size: contain; */
 }
 
 
@@ -336,7 +336,6 @@ body {
     display: inline-block;
     width: 270px;
     height: 120px;
-    padding: 25px 102.34px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-repeat: no-repeat;
@@ -400,6 +399,26 @@ body {
 
 .pictures-what-do li:not(:last-child) {
     margin-right: 30px;
+}
+
+
+.what-do-thumb {
+    position: relative;
+}
+
+
+.what-do-content {
+    position: absolute;
+    bottom: 0px;
+    width: 370px;
+    height: 70px;
+    padding: 27px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
 }
 
 
@@ -482,9 +501,7 @@ body {
 .social-logo-link {
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 12px;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -507,11 +524,8 @@ body {
 /* regular customers */
 
 
-.regular-customers {
-    padding-left: 215px;
-    padding-right: 215px;
+.regular-customers {    
     text-align: center;
-    background-color: var(--primary-white-color);
 }
 
 
@@ -538,11 +552,11 @@ body {
 
 
 .company-link {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -663,84 +677,28 @@ body {
 }
 
 
-.instagram-icon {
-    content: "";
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
+.content-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    background-size: 20px 20px;
-    background-image: url(../images/instagram\ 2.svg);
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 
-.instagram-icon:hover,
-.instagram-icon:focus {
+.content-a:hover,
+.content-a:focus {
+    color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
 
-.twitter-icon {
-    content: "";
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    background-size: 20px 20px;
-    background-image: url(../images/twitter\ 1.svg);
-    background-color: rgba(255, 255, 255, 0.1);
+.content-b {
+    fill: currentColor;
 }
-
-
-.twitter-icon:hover,
-.twitter-icon:focus {
-    background-color: var(--accent-color);
-}
-
-
-.facebook-icon {
-    content: "";
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    background-size: 20px 20px;
-    background-image: url(../images/facebook\ 1.svg);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-
-.facebook-icon:hover,
-.facebook-icon:focus {
-    background-color: var(--accent-color);
-}
-
-.linkedin-icon {
-    content: "";
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    background-size: 20px 20px;
-    background-image: url(../images/linkedin\ 1.svg);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-
-.linkedin-icon:hover,
-.linkedin-icon:focus {
-    background-color: var(--accent-color);
-}
-
 
 
 /* portfollio */
@@ -822,10 +780,15 @@ body {
 }
 
 
-.projects:hover,
-.projects:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-link {
+    display: inline-block; 
 }
+
+
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} 
 
 
 .projects:nth-child(3n) {
@@ -864,6 +827,7 @@ body {
 .project-text {
     font-size: 16px;
     line-height: 1.87;
+    color: var(--primary-text-color);
 }
 
 
