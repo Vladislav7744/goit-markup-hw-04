@@ -331,33 +331,20 @@ body {
 }
 
 
-.features-item::before {
-    content: "";
-    display: inline-block;
+.content-bb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: rgba(245, 244, 250, 1);
-} 
-
-
-.features-item.icon-antenna::before {
-    background-image: url(../images/antenna\ 1\ \(1\).png);
+    color: #000000;
 }
 
-.features-item.icon-clock::before {
-    background-image: url(../images/clock\ 1.png);
-}
-
-.features-item.icon-diagram::before {
-    background-image: url(../images/diagram\ 1.png);
-}
-
-.features-item.icon-astronaut::before {
-    background-image: url(../images/astronaut\ 1.png);
+.features-svg {
+    fill: currentColor;
 }
 
 
